@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SACCJEENModelStoreContainer" CdmEntityContainer="SACCJEENEntities">
+    <EntitySetMapping Name="CATEGORIAS">
+      <EntityTypeMapping TypeName="SACCJEENModel.CATEGORIAS">
+        <MappingFragment StoreEntitySet="CATEGORIAS">
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="IdEstatus" ColumnName="IdEstatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESPECIE">
+      <EntityTypeMapping TypeName="SACCJEENModel.ESPECIE">
+        <MappingFragment StoreEntitySet="ESPECIE">
+          <ScalarProperty Name="IdEspecie" ColumnName="IdEspecie" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="IdEstatus" ColumnName="IdEstatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRESENTACION">
+      <EntityTypeMapping TypeName="SACCJEENModel.PRESENTACION">
+        <MappingFragment StoreEntitySet="PRESENTACION">
+          <ScalarProperty Name="IdPresentacion" ColumnName="IdPresentacion" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="IdEstatus" ColumnName="IdEstatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ALMACEN1">
+      <EntityTypeMapping TypeName="SACCJEENModel.ALMACEN1">
+        <MappingFragment StoreEntitySet="ALMACEN1">
+          <ScalarProperty Name="ID_PRODUCTO" ColumnName="ID_PRODUCTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ID_DESCUENTO" ColumnName="ID_DESCUENTO" />
+          <ScalarProperty Name="C_MINIMA" ColumnName="C_MINIMA" />
+          <ScalarProperty Name="C_MAXIMA" ColumnName="C_MAXIMA" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="VENTA_WEB" ColumnName="VENTA_WEB" />
+          <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+          <ScalarProperty Name="MATERIAL" ColumnName="MATERIAL" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+          <ScalarProperty Name="FOTO_FRENTE" ColumnName="FOTO_FRENTE" />
+          <ScalarProperty Name="FOTO_LADO" ColumnName="FOTO_LADO" />
+          <ScalarProperty Name="GANANCIA" ColumnName="GANANCIA" />
+          <ScalarProperty Name="PRECIO_COSTO" ColumnName="PRECIO_COSTO" />
+          <ScalarProperty Name="PRECIO_COSTO2" ColumnName="PRECIO_COSTO2" />
+          <ScalarProperty Name="PRECIO_VENTA" ColumnName="PRECIO_VENTA" />
+          <ScalarProperty Name="LOCALIZACION" ColumnName="LOCALIZACION" />
+          <ScalarProperty Name="PRECIO_EN" ColumnName="PRECIO_EN" />
+          <ScalarProperty Name="USR_ALTA" ColumnName="USR_ALTA" />
+          <ScalarProperty Name="FECHA_ALTA" ColumnName="FECHA_ALTA" />
+          <ScalarProperty Name="USR_MOD" ColumnName="USR_MOD" />
+          <ScalarProperty Name="FECHA_MOD" ColumnName="FECHA_MOD" />
+          <ScalarProperty Name="CATEGORIA" ColumnName="CATEGORIA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ESPECIE" ColumnName="ESPECIE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ALMACEN2">
+      <EntityTypeMapping TypeName="SACCJEENModel.ALMACEN2">
+        <MappingFragment StoreEntitySet="ALMACEN2">
+          <ScalarProperty Name="ID_PRODUCTO" ColumnName="ID_PRODUCTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ID_DESCUENTO" ColumnName="ID_DESCUENTO" />
+          <ScalarProperty Name="C_MINIMA" ColumnName="C_MINIMA" />
+          <ScalarProperty Name="C_MAXIMA" ColumnName="C_MAXIMA" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="VENTA_WEB" ColumnName="VENTA_WEB" />
+          <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+          <ScalarProperty Name="MATERIAL" ColumnName="MATERIAL" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+          <ScalarProperty Name="FOTO_FRENTE" ColumnName="FOTO_FRENTE" />
+          <ScalarProperty Name="FOTO_LADO" ColumnName="FOTO_LADO" />
+          <ScalarProperty Name="GANANCIA" ColumnName="GANANCIA" />
+          <ScalarProperty Name="PRECIO_COSTO" ColumnName="PRECIO_COSTO" />
+          <ScalarProperty Name="PRECIO_VENTA" ColumnName="PRECIO_VENTA" />
+          <ScalarProperty Name="LOCALIZACION" ColumnName="LOCALIZACION" />
+          <ScalarProperty Name="PRECIO_EN" ColumnName="PRECIO_EN" />
+          <ScalarProperty Name="USR_ALTA" ColumnName="USR_ALTA" />
+          <ScalarProperty Name="FECHA_ALTA" ColumnName="FECHA_ALTA" />
+          <ScalarProperty Name="USR_MOD" ColumnName="USR_MOD" />
+          <ScalarProperty Name="FECHA_MOD" ColumnName="FECHA_MOD" />
+          <ScalarProperty Name="CATEGORIA" ColumnName="CATEGORIA" />
+          <ScalarProperty Name="PRECIO_COSTO2" ColumnName="PRECIO_COSTO2" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ESPECIE" ColumnName="ESPECIE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ALMACEN3">
+      <EntityTypeMapping TypeName="SACCJEENModel.ALMACEN3">
+        <MappingFragment StoreEntitySet="ALMACEN3">
+          <ScalarProperty Name="ID_PRODUCTO" ColumnName="ID_PRODUCTO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ID_DESCUENTO" ColumnName="ID_DESCUENTO" />
+          <ScalarProperty Name="C_MINIMA" ColumnName="C_MINIMA" />
+          <ScalarProperty Name="C_MAXIMA" ColumnName="C_MAXIMA" />
+          <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+          <ScalarProperty Name="VENTA_WEB" ColumnName="VENTA_WEB" />
+          <ScalarProperty Name="MARCA" ColumnName="MARCA" />
+          <ScalarProperty Name="MATERIAL" ColumnName="MATERIAL" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+          <ScalarProperty Name="FOTO_FRENTE" ColumnName="FOTO_FRENTE" />
+          <ScalarProperty Name="FOTO_LADO" ColumnName="FOTO_LADO" />
+          <ScalarProperty Name="GANANCIA" ColumnName="GANANCIA" />
+          <ScalarProperty Name="PRECIO_COSTO" ColumnName="PRECIO_COSTO" />
+          <ScalarProperty Name="CLASIFICACION" ColumnName="CLASIFICACION" />
+          <ScalarProperty Name="PRECIO_COSTO2" ColumnName="PRECIO_COSTO2" />
+          <ScalarProperty Name="LOCALIZACION" ColumnName="LOCALIZACION" />
+          <ScalarProperty Name="PRECIO_EN" ColumnName="PRECIO_EN" />
+          <ScalarProperty Name="USR_ALTA" ColumnName="USR_ALTA" />
+          <ScalarProperty Name="FECHA_ALTA" ColumnName="FECHA_ALTA" />
+          <ScalarProperty Name="USR_MOD" ColumnName="USR_MOD" />
+          <ScalarProperty Name="FECHA_MOD" ColumnName="FECHA_MOD" />
+          <ScalarProperty Name="CATEGORIA" ColumnName="CATEGORIA" />
+          <ScalarProperty Name="NUM" ColumnName="NUM" />
+          <ScalarProperty Name="PRESENTACION" ColumnName="PRESENTACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLASIFICACIONES">
+      <EntityTypeMapping TypeName="SACCJEENModel.CLASIFICACIONES">
+        <MappingFragment StoreEntitySet="CLASIFICACIONES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CLASIFICACION" ColumnName="CLASIFICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTE">
+      <EntityTypeMapping TypeName="SACCJEENModel.CLIENTE">
+        <MappingFragment StoreEntitySet="CLIENTE">
+          <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="NOMBRE_COMERCIAL" ColumnName="NOMBRE_COMERCIAL" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="TELEFONO_CASA" ColumnName="TELEFONO_CASA" />
+          <ScalarProperty Name="TELEFONO_TRABAJO" ColumnName="TELEFONO_TRABAJO" />
+          <ScalarProperty Name="PAIS" ColumnName="PAIS" />
+          <ScalarProperty Name="DIAS_CREDITO" ColumnName="DIAS_CREDITO" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="CONTACTO" ColumnName="CONTACTO" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="COMENTARIOS" ColumnName="COMENTARIOS" />
+          <ScalarProperty Name="CIUDAD" ColumnName="CIUDAD" />
+          <ScalarProperty Name="COLONIA" ColumnName="COLONIA" />
+          <ScalarProperty Name="DESCUENTO" ColumnName="DESCUENTO" />
+          <ScalarProperty Name="ID_DESCUENTO" ColumnName="ID_DESCUENTO" />
+          <ScalarProperty Name="ID_AGENTE" ColumnName="ID_AGENTE" />
+          <ScalarProperty Name="NUMERO_EXTERIOR" ColumnName="NUMERO_EXTERIOR" />
+          <ScalarProperty Name="NUMERO_INTERIOR" ColumnName="NUMERO_INTERIOR" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="CP" ColumnName="CP" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="WEB_PASSWORD" ColumnName="WEB_PASSWORD" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="FECHA_ALTA" ColumnName="FECHA_ALTA" />
+          <ScalarProperty Name="LIMITE_CREDITO" ColumnName="LIMITE_CREDITO" />
+          <ScalarProperty Name="DIRECCION_ENVIO" ColumnName="DIRECCION_ENVIO" />
+          <ScalarProperty Name="VALORACION" ColumnName="VALORACION" />
+          <ScalarProperty Name="LEYENDAS" ColumnName="LEYENDAS" />
+          <ScalarProperty Name="AGENTE" ColumnName="AGENTE" />
+          <ScalarProperty Name="ASIG" ColumnName="ASIG" />
+          <ScalarProperty Name="RECIBO" ColumnName="RECIBO" />
+          <ScalarProperty Name="Adenda_ID_facturaglobal" ColumnName="Adenda_ID_facturaglobal" />
+          <ScalarProperty Name="Adenda_proveedor" ColumnName="Adenda_proveedor" />
+          <ScalarProperty Name="Adenda_contrato" ColumnName="Adenda_contrato" />
+          <ScalarProperty Name="Adenda_unidad_negocio" ColumnName="Adenda_unidad_negocio" />
+          <ScalarProperty Name="Adenda_pedido" ColumnName="Adenda_pedido" />
+          <ScalarProperty Name="Adenda_fianza" ColumnName="Adenda_fianza" />
+          <ScalarProperty Name="Adenda_afianzadora" ColumnName="Adenda_afianzadora" />
+          <ScalarProperty Name="Adenda_alta" ColumnName="Adenda_alta" />
+          <ScalarProperty Name="Num_cuenta_pago_cliente" ColumnName="Num_cuenta_pago_cliente" />
+          <ScalarProperty Name="Flag_extranjero" ColumnName="Flag_extranjero" />
+          <ScalarProperty Name="Clave_CFDI" ColumnName="Clave_CFDI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIREIMPOR">
+      <EntityTypeMapping TypeName="SACCJEENModel.DIREIMPOR">
+        <MappingFragment StoreEntitySet="DIREIMPOR">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="CD" ColumnName="CD" />
+          <ScalarProperty Name="TEL1" ColumnName="TEL1" />
+          <ScalarProperty Name="TEL2" ColumnName="TEL2" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MARCA">
+      <EntityTypeMapping TypeName="SACCJEENModel.MARCA">
+        <MappingFragment StoreEntitySet="MARCA">
+          <ScalarProperty Name="ID_MARCA" ColumnName="ID_MARCA" />
+          <ScalarProperty Name="MARCA1" ColumnName="MARCA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROVEEDOR">
+      <EntityTypeMapping TypeName="SACCJEENModel.PROVEEDOR">
+        <MappingFragment StoreEntitySet="PROVEEDOR">
+          <ScalarProperty Name="ID_PROVEEDOR" ColumnName="ID_PROVEEDOR" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="COLONIA" ColumnName="COLONIA" />
+          <ScalarProperty Name="CIUDAD" ColumnName="CIUDAD" />
+          <ScalarProperty Name="CP" ColumnName="CP" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="TELEFONO1" ColumnName="TELEFONO1" />
+          <ScalarProperty Name="TELEFONO2" ColumnName="TELEFONO2" />
+          <ScalarProperty Name="TELEFONO3" ColumnName="TELEFONO3" />
+          <ScalarProperty Name="NOTAS" ColumnName="NOTAS" />
+          <ScalarProperty Name="PAIS" ColumnName="PAIS" />
+          <ScalarProperty Name="TRANS_BANCO" ColumnName="TRANS_BANCO" />
+          <ScalarProperty Name="TRANS_DIRECCION" ColumnName="TRANS_DIRECCION" />
+          <ScalarProperty Name="TRANS_CIUDAD" ColumnName="TRANS_CIUDAD" />
+          <ScalarProperty Name="TRANS_ROUTING" ColumnName="TRANS_ROUTING" />
+          <ScalarProperty Name="TRANS_CUENTA" ColumnName="TRANS_CUENTA" />
+          <ScalarProperty Name="TRANS_CLAVE_SWIFT" ColumnName="TRANS_CLAVE_SWIFT" />
+          <ScalarProperty Name="ALMACEN1" ColumnName="ALMACEN1" />
+          <ScalarProperty Name="ALMACEN2" ColumnName="ALMACEN2" />
+          <ScalarProperty Name="ALMACEN3" ColumnName="ALMACEN3" />
+          <ScalarProperty Name="ELIMINADO" ColumnName="ELIMINADO" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUCURSALES">
+      <EntityTypeMapping TypeName="SACCJEENModel.SUCURSALES">
+        <MappingFragment StoreEntitySet="SUCURSALES">
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="CALLE" ColumnName="CALLE" />
+          <ScalarProperty Name="COLONIA" ColumnName="COLONIA" />
+          <ScalarProperty Name="CIUDAD" ColumnName="CIUDAD" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="ELIMINADO" ColumnName="ELIMINADO" />
+          <ScalarProperty Name="DISTINTIVO" ColumnName="DISTINTIVO" />
+          <ScalarProperty Name="IVA" ColumnName="IVA" />
+          <ScalarProperty Name="CP" ColumnName="CP" />
+          <ScalarProperty Name="APLICA_PROMO" ColumnName="APLICA_PROMO" />
+          <ScalarProperty Name="ID_SUCURSAL" ColumnName="ID_SUCURSAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

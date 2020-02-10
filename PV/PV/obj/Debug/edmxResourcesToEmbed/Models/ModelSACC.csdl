@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SACCJEENModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CATEGORIAS">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IdEstatus" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ESPECIE">
+    <Key>
+      <PropertyRef Name="IdEspecie" />
+    </Key>
+    <Property Name="IdEspecie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IdEstatus" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRESENTACION">
+    <Key>
+      <PropertyRef Name="IdPresentacion" />
+    </Key>
+    <Property Name="IdPresentacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IdEstatus" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ALMACEN1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_PRODUCTO" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ID_DESCUENTO" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C_MINIMA" Type="Double" />
+    <Property Name="C_MAXIMA" Type="Double" />
+    <Property Name="TIPO" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="VENTA_WEB" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="MARCA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MATERIAL" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="COLOR" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="FOTO_FRENTE" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FOTO_LADO" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="GANANCIA" Type="Double" />
+    <Property Name="PRECIO_COSTO" Type="Double" />
+    <Property Name="PRECIO_COSTO2" Type="Double" />
+    <Property Name="PRECIO_VENTA" Type="Double" />
+    <Property Name="LOCALIZACION" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="PRECIO_EN" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="USR_ALTA" Type="Int32" />
+    <Property Name="FECHA_ALTA" Type="DateTime" Precision="3" />
+    <Property Name="USR_MOD" Type="Int32" />
+    <Property Name="FECHA_MOD" Type="DateTime" Precision="3" />
+    <Property Name="CATEGORIA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ESPECIE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ALMACEN2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_PRODUCTO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ID_DESCUENTO" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C_MINIMA" Type="Double" />
+    <Property Name="C_MAXIMA" Type="Double" />
+    <Property Name="TIPO" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="VENTA_WEB" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="MARCA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MATERIAL" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="COLOR" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="FOTO_FRENTE" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FOTO_LADO" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="GANANCIA" Type="Double" />
+    <Property Name="PRECIO_COSTO" Type="Double" />
+    <Property Name="PRECIO_VENTA" Type="Double" />
+    <Property Name="LOCALIZACION" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="PRECIO_EN" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="USR_ALTA" Type="Int32" />
+    <Property Name="FECHA_ALTA" Type="DateTime" Precision="3" />
+    <Property Name="USR_MOD" Type="Int32" />
+    <Property Name="FECHA_MOD" Type="DateTime" Precision="3" />
+    <Property Name="CATEGORIA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PRECIO_COSTO2" Type="Double" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ESPECIE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ALMACEN3">
+    <Key>
+      <PropertyRef Name="NUM" />
+    </Key>
+    <Property Name="ID_PRODUCTO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ID_DESCUENTO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="C_MINIMA" Type="Double" />
+    <Property Name="C_MAXIMA" Type="Double" />
+    <Property Name="TIPO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="VENTA_WEB" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="MARCA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MATERIAL" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="COLOR" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="FOTO_FRENTE" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FOTO_LADO" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="GANANCIA" Type="Double" />
+    <Property Name="PRECIO_COSTO" Type="Double" />
+    <Property Name="CLASIFICACION" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PRECIO_COSTO2" Type="Double" />
+    <Property Name="LOCALIZACION" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="PRECIO_EN" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="USR_ALTA" Type="Int32" />
+    <Property Name="FECHA_ALTA" Type="DateTime" Precision="3" />
+    <Property Name="USR_MOD" Type="Int32" />
+    <Property Name="FECHA_MOD" Type="DateTime" Precision="3" />
+    <Property Name="CATEGORIA" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="NUM" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PRESENTACION" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CLASIFICACIONES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CLASIFICACION" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CLIENTE">
+    <Key>
+      <PropertyRef Name="ID_CLIENTE" />
+      <PropertyRef Name="DIAS_CREDITO" />
+      <PropertyRef Name="DESCUENTO" />
+      <PropertyRef Name="ID_DESCUENTO" />
+      <PropertyRef Name="LIMITE_CREDITO" />
+      <PropertyRef Name="Adenda_ID_facturaglobal" />
+      <PropertyRef Name="Flag_extranjero" />
+    </Key>
+    <Property Name="ID_CLIENTE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="NOMBRE_COMERCIAL" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="RFC" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO_CASA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO_TRABAJO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PAIS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DIAS_CREDITO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FAX" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACTO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="COMENTARIOS" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CIUDAD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="COLONIA" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="DESCUENTO" Type="Double" Nullable="false" />
+    <Property Name="ID_DESCUENTO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_AGENTE" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="NUMERO_EXTERIOR" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="NUMERO_INTERIOR" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="CURP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CP" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="WEB_PASSWORD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="FECHA_ALTA" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="LIMITE_CREDITO" Type="Double" Nullable="false" />
+    <Property Name="DIRECCION_ENVIO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="VALORACION" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="LEYENDAS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="AGENTE" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="ASIG" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="RECIBO" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="Adenda_ID_facturaglobal" Type="Int32" Nullable="false" />
+    <Property Name="Adenda_proveedor" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Adenda_contrato" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Adenda_unidad_negocio" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Adenda_pedido" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Adenda_fianza" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Adenda_afianzadora" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Adenda_alta" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Num_cuenta_pago_cliente" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Flag_extranjero" Type="Boolean" Nullable="false" />
+    <Property Name="Clave_CFDI" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DIREIMPOR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="CD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TEL1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TEL2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MARCA">
+    <Key>
+      <PropertyRef Name="ID_MARCA" />
+      <PropertyRef Name="MARCA1" />
+    </Key>
+    <Property Name="ID_MARCA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MARCA1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PROVEEDOR">
+    <Key>
+      <PropertyRef Name="ID_PROVEEDOR" />
+      <PropertyRef Name="ELIMINADO" />
+    </Key>
+    <Property Name="ID_PROVEEDOR" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="COLONIA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CIUDAD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="RFC" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NOTAS" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="PAIS" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="TRANS_BANCO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TRANS_DIRECCION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TRANS_CIUDAD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TRANS_ROUTING" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TRANS_CUENTA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TRANS_CLAVE_SWIFT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ALMACEN1" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ALMACEN2" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ALMACEN3" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ELIMINADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SUCURSALES">
+    <Key>
+      <PropertyRef Name="ID_SUCURSAL" />
+    </Key>
+    <Property Name="NOMBRE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="CALLE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="COLONIA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CIUDAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ELIMINADO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DISTINTIVO" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="IVA" Type="Int32" />
+    <Property Name="CP" Type="Int32" />
+    <Property Name="APLICA_PROMO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ID_SUCURSAL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="SACCJEENEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CATEGORIAS" EntityType="Self.CATEGORIAS" />
+    <EntitySet Name="ESPECIE" EntityType="Self.ESPECIE" />
+    <EntitySet Name="PRESENTACION" EntityType="Self.PRESENTACION" />
+    <EntitySet Name="ALMACEN1" EntityType="Self.ALMACEN1" />
+    <EntitySet Name="ALMACEN2" EntityType="Self.ALMACEN2" />
+    <EntitySet Name="ALMACEN3" EntityType="Self.ALMACEN3" />
+    <EntitySet Name="CLASIFICACIONES" EntityType="Self.CLASIFICACIONES" />
+    <EntitySet Name="CLIENTE" EntityType="Self.CLIENTE" />
+    <EntitySet Name="DIREIMPOR" EntityType="Self.DIREIMPOR" />
+    <EntitySet Name="MARCA" EntityType="Self.MARCA" />
+    <EntitySet Name="PROVEEDOR" EntityType="Self.PROVEEDOR" />
+    <EntitySet Name="SUCURSALES" EntityType="Self.SUCURSALES" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SACCJEENModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SACCJEEN.dbo.ALMACEN1' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="ALMACEN1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_PRODUCTO" Type="char" MaxLength="25" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="100" />
+    <Property Name="ID_DESCUENTO" Type="char" MaxLength="10" />
+    <Property Name="C_MINIMA" Type="float" />
+    <Property Name="C_MAXIMA" Type="float" />
+    <Property Name="TIPO" Type="char" MaxLength="10" />
+    <Property Name="VENTA_WEB" Type="char" MaxLength="10" />
+    <Property Name="MARCA" Type="varchar" MaxLength="50" />
+    <Property Name="MATERIAL" Type="char" MaxLength="20" />
+    <Property Name="COLOR" Type="char" MaxLength="10" />
+    <Property Name="FOTO_FRENTE" Type="image" />
+    <Property Name="FOTO_LADO" Type="image" />
+    <Property Name="GANANCIA" Type="float" />
+    <Property Name="PRECIO_COSTO" Type="float" />
+    <Property Name="PRECIO_COSTO2" Type="float" />
+    <Property Name="PRECIO_VENTA" Type="float" />
+    <Property Name="LOCALIZACION" Type="char" MaxLength="10" />
+    <Property Name="PRECIO_EN" Type="varchar" MaxLength="10" />
+    <Property Name="USR_ALTA" Type="int" />
+    <Property Name="FECHA_ALTA" Type="datetime" />
+    <Property Name="USR_MOD" Type="int" />
+    <Property Name="FECHA_MOD" Type="datetime" />
+    <Property Name="CATEGORIA" Type="varchar" MaxLength="25" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ESPECIE" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SACCJEEN.dbo.ALMACEN2' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="ALMACEN2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_PRODUCTO" Type="varchar" MaxLength="30" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="100" />
+    <Property Name="ID_DESCUENTO" Type="char" MaxLength="10" />
+    <Property Name="C_MINIMA" Type="float" />
+    <Property Name="C_MAXIMA" Type="float" />
+    <Property Name="TIPO" Type="char" MaxLength="10" />
+    <Property Name="VENTA_WEB" Type="char" MaxLength="10" />
+    <Property Name="MARCA" Type="varchar" MaxLength="50" />
+    <Property Name="MATERIAL" Type="char" MaxLength="20" />
+    <Property Name="COLOR" Type="char" MaxLength="10" />
+    <Property Name="FOTO_FRENTE" Type="image" />
+    <Property Name="FOTO_LADO" Type="image" />
+    <Property Name="GANANCIA" Type="float" />
+    <Property Name="PRECIO_COSTO" Type="float" />
+    <Property Name="PRECIO_VENTA" Type="float" />
+    <Property Name="LOCALIZACION" Type="char" MaxLength="10" />
+    <Property Name="PRECIO_EN" Type="varchar" MaxLength="10" />
+    <Property Name="USR_ALTA" Type="int" />
+    <Property Name="FECHA_ALTA" Type="datetime" />
+    <Property Name="USR_MOD" Type="int" />
+    <Property Name="FECHA_MOD" Type="datetime" />
+    <Property Name="CATEGORIA" Type="varchar" MaxLength="25" />
+    <Property Name="PRECIO_COSTO2" Type="float" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ESPECIE" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SACCJEEN.dbo.ALMACEN3' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="ALMACEN3">
+    <Key>
+      <PropertyRef Name="NUM" />
+    </Key>
+    <Property Name="ID_PRODUCTO" Type="varchar" MaxLength="50" />
+    <Property Name="DESCRIPCION" Type="varchar" MaxLength="100" />
+    <Property Name="ID_DESCUENTO" Type="varchar" MaxLength="30" />
+    <Property Name="C_MINIMA" Type="float" />
+    <Property Name="C_MAXIMA" Type="float" />
+    <Property Name="TIPO" Type="varchar" MaxLength="10" />
+    <Property Name="VENTA_WEB" Type="char" MaxLength="10" />
+    <Property Name="MARCA" Type="varchar" MaxLength="50" />
+    <Property Name="MATERIAL" Type="char" MaxLength="20" />
+    <Property Name="COLOR" Type="char" MaxLength="10" />
+    <Property Name="FOTO_FRENTE" Type="image" />
+    <Property Name="FOTO_LADO" Type="image" />
+    <Property Name="GANANCIA" Type="float" />
+    <Property Name="PRECIO_COSTO" Type="float" />
+    <Property Name="CLASIFICACION" Type="varchar" MaxLength="25" />
+    <Property Name="PRECIO_COSTO2" Type="float" />
+    <Property Name="LOCALIZACION" Type="char" MaxLength="10" />
+    <Property Name="PRECIO_EN" Type="varchar" MaxLength="10" />
+    <Property Name="USR_ALTA" Type="int" />
+    <Property Name="FECHA_ALTA" Type="datetime" />
+    <Property Name="USR_MOD" Type="int" />
+    <Property Name="FECHA_MOD" Type="datetime" />
+    <Property Name="CATEGORIA" Type="varchar" MaxLength="25" />
+    <Property Name="NUM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PRESENTACION" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CATEGORIAS">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="IdEstatus" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SACCJEEN.dbo.CLASIFICACIONES' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="CLASIFICACIONES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CLASIFICACION" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SACCJEEN.dbo.CLIENTE' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="CLIENTE">
+    <Key>
+      <PropertyRef Name="ID_CLIENTE" />
+      <PropertyRef Name="DIAS_CREDITO" />
+      <PropertyRef Name="DESCUENTO" />
+      <PropertyRef Name="ID_DESCUENTO" />
+      <PropertyRef Name="LIMITE_CREDITO" />
+      <PropertyRef Name="Adenda_ID_facturaglobal" />
+      <PropertyRef Name="Flag_extranjero" />
+    </Key>
+    <Property Name="ID_CLIENTE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="150" />
+    <Property Name="NOMBRE_COMERCIAL" Type="varchar" MaxLength="150" />
+    <Property Name="RFC" Type="varchar" MaxLength="30" />
+    <Property Name="TELEFONO_CASA" Type="varchar" MaxLength="20" />
+    <Property Name="TELEFONO_TRABAJO" Type="varchar" MaxLength="20" />
+    <Property Name="PAIS" Type="varchar" MaxLength="20" />
+    <Property Name="DIAS_CREDITO" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="FAX" Type="varchar" MaxLength="20" />
+    <Property Name="CONTACTO" Type="varchar" MaxLength="100" />
+    <Property Name="DIRECCION" Type="varchar" MaxLength="100" />
+    <Property Name="COMENTARIOS" Type="varchar" MaxLength="250" />
+    <Property Name="CIUDAD" Type="varchar" MaxLength="100" />
+    <Property Name="COLONIA" Type="varchar" MaxLength="40" />
+    <Property Name="DESCUENTO" Type="float" Nullable="false" />
+    <Property Name="ID_DESCUENTO" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ID_AGENTE" Type="char" MaxLength="10" />
+    <Property Name="NUMERO_EXTERIOR" Type="char" MaxLength="40" />
+    <Property Name="NUMERO_INTERIOR" Type="char" MaxLength="40" />
+    <Property Name="CURP" Type="varchar" MaxLength="20" />
+    <Property Name="CP" Type="char" MaxLength="10" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="50" />
+    <Property Name="WEB_PASSWORD" Type="varchar" MaxLength="15" />
+    <Property Name="ESTADO" Type="char" MaxLength="20" />
+    <Property Name="FECHA_ALTA" Type="char" MaxLength="10" />
+    <Property Name="LIMITE_CREDITO" Type="float" Nullable="false" />
+    <Property Name="DIRECCION_ENVIO" Type="varchar" MaxLength="100" />
+    <Property Name="VALORACION" Type="char" MaxLength="1" />
+    <Property Name="LEYENDAS" Type="char" MaxLength="1" />
+    <Property Name="AGENTE" Type="char" MaxLength="30" />
+    <Property Name="ASIG" Type="char" MaxLength="1" />
+    <Property Name="RECIBO" Type="char" MaxLength="20" />
+    <Property Name="Adenda_ID_facturaglobal" Type="int" Nullable="false" />
+    <Property Name="Adenda_proveedor" Type="nvarchar" MaxLength="20" />
+    <Property Name="Adenda_contrato" Type="nvarchar" MaxLength="25" />
+    <Property Name="Adenda_unidad_negocio" Type="nvarchar" MaxLength="10" />
+    <Property Name="Adenda_pedido" Type="nvarchar" MaxLength="20" />
+    <Property Name="Adenda_fianza" Type="nvarchar" MaxLength="25" />
+    <Property Name="Adenda_afianzadora" Type="nvarchar" MaxLength="40" />
+    <Property Name="Adenda_alta" Type="nvarchar" MaxLength="25" />
+    <Property Name="Num_cuenta_pago_cliente" Type="nvarchar" MaxLength="25" />
+    <Property Name="Flag_extranjero" Type="bit" Nullable="false" />
+    <Property Name="Clave_CFDI" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SACCJEEN.dbo.DIREIMPOR' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="DIREIMPOR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="DIRECCION" Type="varchar" MaxLength="60" />
+    <Property Name="CD" Type="varchar" MaxLength="50" />
+    <Property Name="TEL1" Type="varchar" MaxLength="50" />
+    <Property Name="TEL2" Type="varchar" MaxLength="50" />
+    <Property Name="STATUS" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="ESPECIE">
+    <Key>
+      <PropertyRef Name="IdEspecie" />
+    </Key>
+    <Property Name="IdEspecie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="IdEstatus" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SACCJEEN.dbo.MARCA' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="MARCA">
+    <Key>
+      <PropertyRef Name="ID_MARCA" />
+      <PropertyRef Name="MARCA" />
+    </Key>
+    <Property Name="ID_MARCA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MARCA" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRESENTACION">
+    <Key>
+      <PropertyRef Name="IdPresentacion" />
+    </Key>
+    <Property Name="IdPresentacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="IdEstatus" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SACCJEEN.dbo.PROVEEDOR' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="PROVEEDOR">
+    <Key>
+      <PropertyRef Name="ID_PROVEEDOR" />
+      <PropertyRef Name="ELIMINADO" />
+    </Key>
+    <Property Name="ID_PROVEEDOR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="100" />
+    <Property Name="DIRECCION" Type="varchar" MaxLength="100" />
+    <Property Name="COLONIA" Type="varchar" MaxLength="30" />
+    <Property Name="CIUDAD" Type="varchar" MaxLength="30" />
+    <Property Name="CP" Type="varchar" MaxLength="10" />
+    <Property Name="RFC" Type="varchar" MaxLength="30" />
+    <Property Name="TELEFONO1" Type="varchar" MaxLength="20" />
+    <Property Name="TELEFONO2" Type="varchar" MaxLength="20" />
+    <Property Name="TELEFONO3" Type="varchar" MaxLength="20" />
+    <Property Name="NOTAS" Type="varchar" MaxLength="300" />
+    <Property Name="PAIS" Type="char" MaxLength="20" />
+    <Property Name="TRANS_BANCO" Type="varchar" MaxLength="100" />
+    <Property Name="TRANS_DIRECCION" Type="varchar" MaxLength="100" />
+    <Property Name="TRANS_CIUDAD" Type="varchar" MaxLength="100" />
+    <Property Name="TRANS_ROUTING" Type="varchar" MaxLength="100" />
+    <Property Name="TRANS_CUENTA" Type="varchar" MaxLength="100" />
+    <Property Name="TRANS_CLAVE_SWIFT" Type="varchar" MaxLength="100" />
+    <Property Name="ALMACEN1" Type="varchar" MaxLength="1" />
+    <Property Name="ALMACEN2" Type="varchar" MaxLength="1" />
+    <Property Name="ALMACEN3" Type="varchar" MaxLength="1" />
+    <Property Name="ELIMINADO" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ESTADO" Type="char" MaxLength="20" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SACCJEEN.dbo.SUCURSALES' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="SUCURSALES">
+    <Key>
+      <PropertyRef Name="ID_SUCURSAL" />
+    </Key>
+    <Property Name="NOMBRE" Type="varchar" MaxLength="25" />
+    <Property Name="CALLE" Type="varchar" MaxLength="100" />
+    <Property Name="COLONIA" Type="varchar" MaxLength="50" />
+    <Property Name="CIUDAD" Type="varchar" MaxLength="50" />
+    <Property Name="ESTADO" Type="varchar" MaxLength="50" />
+    <Property Name="TELEFONO" Type="varchar" MaxLength="50" />
+    <Property Name="ELIMINADO" Type="char" MaxLength="1" />
+    <Property Name="DISTINTIVO" Type="varchar" MaxLength="3" />
+    <Property Name="IVA" Type="int" />
+    <Property Name="CP" Type="int" />
+    <Property Name="APLICA_PROMO" Type="char" MaxLength="1" />
+    <Property Name="ID_SUCURSAL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SACCJEENModelStoreContainer">
+    <EntitySet Name="CATEGORIAS" EntityType="Self.CATEGORIAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ESPECIE" EntityType="Self.ESPECIE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRESENTACION" EntityType="Self.PRESENTACION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ALMACEN1" EntityType="Self.ALMACEN1" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ALMACEN1].[ID_PRODUCTO] AS [ID_PRODUCTO], 
+    [ALMACEN1].[DESCRIPCION] AS [DESCRIPCION], 
+    [ALMACEN1].[ID_DESCUENTO] AS [ID_DESCUENTO], 
+    [ALMACEN1].[C_MINIMA] AS [C_MINIMA], 
+    [ALMACEN1].[C_MAXIMA] AS [C_MAXIMA], 
+    [ALMACEN1].[TIPO] AS [TIPO], 
+    [ALMACEN1].[VENTA_WEB] AS [VENTA_WEB], 
+    [ALMACEN1].[MARCA] AS [MARCA], 
+    [ALMACEN1].[MATERIAL] AS [MATERIAL], 
+    [ALMACEN1].[COLOR] AS [COLOR], 
+    [ALMACEN1].[FOTO_FRENTE] AS [FOTO_FRENTE], 
+    [ALMACEN1].[FOTO_LADO] AS [FOTO_LADO], 
+    [ALMACEN1].[GANANCIA] AS [GANANCIA], 
+    [ALMACEN1].[PRECIO_COSTO] AS [PRECIO_COSTO], 
+    [ALMACEN1].[PRECIO_COSTO2] AS [PRECIO_COSTO2], 
+    [ALMACEN1].[PRECIO_VENTA] AS [PRECIO_VENTA], 
+    [ALMACEN1].[LOCALIZACION] AS [LOCALIZACION], 
+    [ALMACEN1].[PRECIO_EN] AS [PRECIO_EN], 
+    [ALMACEN1].[USR_ALTA] AS [USR_ALTA], 
+    [ALMACEN1].[FECHA_ALTA] AS [FECHA_ALTA], 
+    [ALMACEN1].[USR_MOD] AS [USR_MOD], 
+    [ALMACEN1].[FECHA_MOD] AS [FECHA_MOD], 
+    [ALMACEN1].[CATEGORIA] AS [CATEGORIA], 
+    [ALMACEN1].[ID] AS [ID], 
+    [ALMACEN1].[ESPECIE] AS [ESPECIE]
+    FROM [dbo].[ALMACEN1] AS [ALMACEN1]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ALMACEN2" EntityType="Self.ALMACEN2" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ALMACEN2].[ID_PRODUCTO] AS [ID_PRODUCTO], 
+    [ALMACEN2].[DESCRIPCION] AS [DESCRIPCION], 
+    [ALMACEN2].[ID_DESCUENTO] AS [ID_DESCUENTO], 
+    [ALMACEN2].[C_MINIMA] AS [C_MINIMA], 
+    [ALMACEN2].[C_MAXIMA] AS [C_MAXIMA], 
+    [ALMACEN2].[TIPO] AS [TIPO], 
+    [ALMACEN2].[VENTA_WEB] AS [VENTA_WEB], 
+    [ALMACEN2].[MARCA] AS [MARCA], 
+    [ALMACEN2].[MATERIAL] AS [MATERIAL], 
+    [ALMACEN2].[COLOR] AS [COLOR], 
+    [ALMACEN2].[FOTO_FRENTE] AS [FOTO_FRENTE], 
+    [ALMACEN2].[FOTO_LADO] AS [FOTO_LADO], 
+    [ALMACEN2].[GANANCIA] AS [GANANCIA], 
+    [ALMACEN2].[PRECIO_COSTO] AS [PRECIO_COSTO], 
+    [ALMACEN2].[PRECIO_VENTA] AS [PRECIO_VENTA], 
+    [ALMACEN2].[LOCALIZACION] AS [LOCALIZACION], 
+    [ALMACEN2].[PRECIO_EN] AS [PRECIO_EN], 
+    [ALMACEN2].[USR_ALTA] AS [USR_ALTA], 
+    [ALMACEN2].[FECHA_ALTA] AS [FECHA_ALTA], 
+    [ALMACEN2].[USR_MOD] AS [USR_MOD], 
+    [ALMACEN2].[FECHA_MOD] AS [FECHA_MOD], 
+    [ALMACEN2].[CATEGORIA] AS [CATEGORIA], 
+    [ALMACEN2].[PRECIO_COSTO2] AS [PRECIO_COSTO2], 
+    [ALMACEN2].[ID] AS [ID], 
+    [ALMACEN2].[ESPECIE] AS [ESPECIE]
+    FROM [dbo].[ALMACEN2] AS [ALMACEN2]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ALMACEN3" EntityType="Self.ALMACEN3" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ALMACEN3].[ID_PRODUCTO] AS [ID_PRODUCTO], 
+    [ALMACEN3].[DESCRIPCION] AS [DESCRIPCION], 
+    [ALMACEN3].[ID_DESCUENTO] AS [ID_DESCUENTO], 
+    [ALMACEN3].[C_MINIMA] AS [C_MINIMA], 
+    [ALMACEN3].[C_MAXIMA] AS [C_MAXIMA], 
+    [ALMACEN3].[TIPO] AS [TIPO], 
+    [ALMACEN3].[VENTA_WEB] AS [VENTA_WEB], 
+    [ALMACEN3].[MARCA] AS [MARCA], 
+    [ALMACEN3].[MATERIAL] AS [MATERIAL], 
+    [ALMACEN3].[COLOR] AS [COLOR], 
+    [ALMACEN3].[FOTO_FRENTE] AS [FOTO_FRENTE], 
+    [ALMACEN3].[FOTO_LADO] AS [FOTO_LADO], 
+    [ALMACEN3].[GANANCIA] AS [GANANCIA], 
+    [ALMACEN3].[PRECIO_COSTO] AS [PRECIO_COSTO], 
+    [ALMACEN3].[CLASIFICACION] AS [CLASIFICACION], 
+    [ALMACEN3].[PRECIO_COSTO2] AS [PRECIO_COSTO2], 
+    [ALMACEN3].[LOCALIZACION] AS [LOCALIZACION], 
+    [ALMACEN3].[PRECIO_EN] AS [PRECIO_EN], 
+    [ALMACEN3].[USR_ALTA] AS [USR_ALTA], 
+    [ALMACEN3].[FECHA_ALTA] AS [FECHA_ALTA], 
+    [ALMACEN3].[USR_MOD] AS [USR_MOD], 
+    [ALMACEN3].[FECHA_MOD] AS [FECHA_MOD], 
+    [ALMACEN3].[CATEGORIA] AS [CATEGORIA], 
+    [ALMACEN3].[NUM] AS [NUM], 
+    [ALMACEN3].[PRESENTACION] AS [PRESENTACION]
+    FROM [dbo].[ALMACEN3] AS [ALMACEN3]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CLASIFICACIONES" EntityType="Self.CLASIFICACIONES" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CLASIFICACIONES].[ID] AS [ID], 
+    [CLASIFICACIONES].[CLASIFICACION] AS [CLASIFICACION]
+    FROM [dbo].[CLASIFICACIONES] AS [CLASIFICACIONES]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CLIENTE" EntityType="Self.CLIENTE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CLIENTE].[ID_CLIENTE] AS [ID_CLIENTE], 
+    [CLIENTE].[NOMBRE] AS [NOMBRE], 
+    [CLIENTE].[NOMBRE_COMERCIAL] AS [NOMBRE_COMERCIAL], 
+    [CLIENTE].[RFC] AS [RFC], 
+    [CLIENTE].[TELEFONO_CASA] AS [TELEFONO_CASA], 
+    [CLIENTE].[TELEFONO_TRABAJO] AS [TELEFONO_TRABAJO], 
+    [CLIENTE].[PAIS] AS [PAIS], 
+    [CLIENTE].[DIAS_CREDITO] AS [DIAS_CREDITO], 
+    [CLIENTE].[FAX] AS [FAX], 
+    [CLIENTE].[CONTACTO] AS [CONTACTO], 
+    [CLIENTE].[DIRECCION] AS [DIRECCION], 
+    [CLIENTE].[COMENTARIOS] AS [COMENTARIOS], 
+    [CLIENTE].[CIUDAD] AS [CIUDAD], 
+    [CLIENTE].[COLONIA] AS [COLONIA], 
+    [CLIENTE].[DESCUENTO] AS [DESCUENTO], 
+    [CLIENTE].[ID_DESCUENTO] AS [ID_DESCUENTO], 
+    [CLIENTE].[ID_AGENTE] AS [ID_AGENTE], 
+    [CLIENTE].[NUMERO_EXTERIOR] AS [NUMERO_EXTERIOR], 
+    [CLIENTE].[NUMERO_INTERIOR] AS [NUMERO_INTERIOR], 
+    [CLIENTE].[CURP] AS [CURP], 
+    [CLIENTE].[CP] AS [CP], 
+    [CLIENTE].[EMAIL] AS [EMAIL], 
+    [CLIENTE].[WEB_PASSWORD] AS [WEB_PASSWORD], 
+    [CLIENTE].[ESTADO] AS [ESTADO], 
+    [CLIENTE].[FECHA_ALTA] AS [FECHA_ALTA], 
+    [CLIENTE].[LIMITE_CREDITO] AS [LIMITE_CREDITO], 
+    [CLIENTE].[DIRECCION_ENVIO] AS [DIRECCION_ENVIO], 
+    [CLIENTE].[VALORACION] AS [VALORACION], 
+    [CLIENTE].[LEYENDAS] AS [LEYENDAS], 
+    [CLIENTE].[AGENTE] AS [AGENTE], 
+    [CLIENTE].[ASIG] AS [ASIG], 
+    [CLIENTE].[RECIBO] AS [RECIBO], 
+    [CLIENTE].[Adenda_ID_facturaglobal] AS [Adenda_ID_facturaglobal], 
+    [CLIENTE].[Adenda_proveedor] AS [Adenda_proveedor], 
+    [CLIENTE].[Adenda_contrato] AS [Adenda_contrato], 
+    [CLIENTE].[Adenda_unidad_negocio] AS [Adenda_unidad_negocio], 
+    [CLIENTE].[Adenda_pedido] AS [Adenda_pedido], 
+    [CLIENTE].[Adenda_fianza] AS [Adenda_fianza], 
+    [CLIENTE].[Adenda_afianzadora] AS [Adenda_afianzadora], 
+    [CLIENTE].[Adenda_alta] AS [Adenda_alta], 
+    [CLIENTE].[Num_cuenta_pago_cliente] AS [Num_cuenta_pago_cliente], 
+    [CLIENTE].[Flag_extranjero] AS [Flag_extranjero], 
+    [CLIENTE].[Clave_CFDI] AS [Clave_CFDI]
+    FROM [dbo].[CLIENTE] AS [CLIENTE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DIREIMPOR" EntityType="Self.DIREIMPOR" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DIREIMPOR].[ID] AS [ID], 
+    [DIREIMPOR].[NOMBRE] AS [NOMBRE], 
+    [DIREIMPOR].[DIRECCION] AS [DIRECCION], 
+    [DIREIMPOR].[CD] AS [CD], 
+    [DIREIMPOR].[TEL1] AS [TEL1], 
+    [DIREIMPOR].[TEL2] AS [TEL2], 
+    [DIREIMPOR].[STATUS] AS [STATUS]
+    FROM [dbo].[DIREIMPOR] AS [DIREIMPOR]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MARCA" EntityType="Self.MARCA" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MARCA].[ID_MARCA] AS [ID_MARCA], 
+    [MARCA].[MARCA] AS [MARCA]
+    FROM [dbo].[MARCA] AS [MARCA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PROVEEDOR" EntityType="Self.PROVEEDOR" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PROVEEDOR].[ID_PROVEEDOR] AS [ID_PROVEEDOR], 
+    [PROVEEDOR].[NOMBRE] AS [NOMBRE], 
+    [PROVEEDOR].[DIRECCION] AS [DIRECCION], 
+    [PROVEEDOR].[COLONIA] AS [COLONIA], 
+    [PROVEEDOR].[CIUDAD] AS [CIUDAD], 
+    [PROVEEDOR].[CP] AS [CP], 
+    [PROVEEDOR].[RFC] AS [RFC], 
+    [PROVEEDOR].[TELEFONO1] AS [TELEFONO1], 
+    [PROVEEDOR].[TELEFONO2] AS [TELEFONO2], 
+    [PROVEEDOR].[TELEFONO3] AS [TELEFONO3], 
+    [PROVEEDOR].[NOTAS] AS [NOTAS], 
+    [PROVEEDOR].[PAIS] AS [PAIS], 
+    [PROVEEDOR].[TRANS_BANCO] AS [TRANS_BANCO], 
+    [PROVEEDOR].[TRANS_DIRECCION] AS [TRANS_DIRECCION], 
+    [PROVEEDOR].[TRANS_CIUDAD] AS [TRANS_CIUDAD], 
+    [PROVEEDOR].[TRANS_ROUTING] AS [TRANS_ROUTING], 
+    [PROVEEDOR].[TRANS_CUENTA] AS [TRANS_CUENTA], 
+    [PROVEEDOR].[TRANS_CLAVE_SWIFT] AS [TRANS_CLAVE_SWIFT], 
+    [PROVEEDOR].[ALMACEN1] AS [ALMACEN1], 
+    [PROVEEDOR].[ALMACEN2] AS [ALMACEN2], 
+    [PROVEEDOR].[ALMACEN3] AS [ALMACEN3], 
+    [PROVEEDOR].[ELIMINADO] AS [ELIMINADO], 
+    [PROVEEDOR].[ESTADO] AS [ESTADO]
+    FROM [dbo].[PROVEEDOR] AS [PROVEEDOR]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SUCURSALES" EntityType="Self.SUCURSALES" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SUCURSALES].[NOMBRE] AS [NOMBRE], 
+    [SUCURSALES].[CALLE] AS [CALLE], 
+    [SUCURSALES].[COLONIA] AS [COLONIA], 
+    [SUCURSALES].[CIUDAD] AS [CIUDAD], 
+    [SUCURSALES].[ESTADO] AS [ESTADO], 
+    [SUCURSALES].[TELEFONO] AS [TELEFONO], 
+    [SUCURSALES].[ELIMINADO] AS [ELIMINADO], 
+    [SUCURSALES].[DISTINTIVO] AS [DISTINTIVO], 
+    [SUCURSALES].[IVA] AS [IVA], 
+    [SUCURSALES].[CP] AS [CP], 
+    [SUCURSALES].[APLICA_PROMO] AS [APLICA_PROMO], 
+    [SUCURSALES].[ID_SUCURSAL] AS [ID_SUCURSAL]
+    FROM [dbo].[SUCURSALES] AS [SUCURSALES]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
