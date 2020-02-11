@@ -8,9 +8,9 @@
                 <table style="width: 100%;">
                     <tr>
                         <td colspan="4">
-                            <asp:ImageButton ID="BTNGuardar" runat="server" Text="Guardar" ImageUrl="~/Imagenes/IMGuardar.png" CausesValidation="true" ValidationGroup="BTNGuardar" />
-							<asp:ImageButton ID="BTNConsultar" runat="server" Text="Consultar" ImageUrl="~/Imagenes/IMConsultar.png" CausesValidation="true" ValidationGroup="BTNGuardar" />
-                            <asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" />
+                            <asp:ImageButton ID="BTNGuardar" runat="server" Text="Guardar" ImageUrl="~/Imagenes/IMGuardar.png" CausesValidation="true" ValidationGroup="BTNGuardar" Width="80px" />
+							<asp:ImageButton ID="BTNConsultar" runat="server" Text="Consultar" ImageUrl="~/Imagenes/IMConsultar.png" CausesValidation="true" ValidationGroup="BTNGuardar" Width="80px" />
+                            <asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" Width="80px" />
                         </td>
                     </tr>
                     <tr>
@@ -157,7 +157,7 @@
 					<tr style="text-align: left;">
 						<td style="width: 85px; height: 20px;"></td>
 						<td style="height: 20px">
-							<asp:ImageButton ID="BTNuevo" runat="server" ImageUrl="~/Imagenes/IMNuevo.png" Text="Nuevo" />
+							<asp:ImageButton ID="BTNuevo" runat="server" ImageUrl="~/Imagenes/IMNuevo.png" Text="Nuevo" Width="80px" />
 						</td>
                     </tr>
 					<tr style="text-align: left;">

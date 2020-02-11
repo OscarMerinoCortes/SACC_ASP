@@ -8,10 +8,10 @@
                 <table style="width: 100%;">
                     <tr>
                         <td colspan="3" style="height: 25px">
-                            <asp:ImageButton ID="BTNuevo" runat="server" Text="Nuevo" ImageUrl="~/Imagenes/IMNuevo.png"  CssClass="button"/>
-                            <asp:ImageButton ID="BTNGuardar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMGuardar.png" Text="Guardar" ValidationGroup="BTNGuardar" />
-							<asp:ImageButton ID="BTNConsultar" runat="server" Text="Consultar" ImageUrl="~/Imagenes/IMConsultar.png" CausesValidation="true" ValidationGroup="BTNGuardar" CssClass="button" Visible="False"/>
-							<asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" />
+                            <asp:ImageButton ID="BTNuevo" runat="server" Text="Nuevo" ImageUrl="~/Imagenes/IMNuevo.png"  CssClass="button" Width="80px"/>
+                            <asp:ImageButton ID="BTNGuardar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMGuardar.png" Text="Guardar" ValidationGroup="BTNGuardar" Width="80px" />
+							<asp:ImageButton ID="BTNConsultar" runat="server" Text="Consultar" ImageUrl="~/Imagenes/IMConsultar.png" CausesValidation="true" ValidationGroup="BTNGuardar" CssClass="button" Visible="False" Width="80px"/>
+							<asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" Width="80px" />
 						</td>
 					</tr>
 					<tr>

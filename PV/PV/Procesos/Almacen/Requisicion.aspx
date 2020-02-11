@@ -7,11 +7,11 @@
 				<br />
                 <table style="width: 100%;">
                     <tr>
-                        <td style="width: 169px" colspan="3">
-                            <asp:ImageButton ID="BTNuevo" runat="server" Text="Nuevo" ImageUrl="~/Imagenes/IMNuevo.png" />
-                            <asp:ImageButton ID="BTNGuardar" runat="server" Text="Guardar" ImageUrl="~/Imagenes/IMGuardar.png" CausesValidation="true" ValidationGroup="BTNGuardar" />
-							<asp:ImageButton ID="BTNConsultar" runat="server" Text="Consultar" ImageUrl="~/Imagenes/IMConsultar.png" CausesValidation="true" ValidationGroup="BTNGuardar" />
-                            <asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" />
+                        <td colspan="3">
+                            <asp:ImageButton ID="BTNuevo" runat="server" Text="Nuevo" ImageUrl="~/Imagenes/IMNuevo.png" Width="80px" />
+                            <asp:ImageButton ID="BTNGuardar" runat="server" Text="Guardar" ImageUrl="~/Imagenes/IMGuardar.png" CausesValidation="true" ValidationGroup="BTNGuardar" Width="80px" />
+							<asp:ImageButton ID="BTNConsultar" runat="server" Text="Consultar" ImageUrl="~/Imagenes/IMConsultar.png" CausesValidation="true" ValidationGroup="BTNGuardar" Width="80px" />
+                            <asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" Width="80px" />
                         </td>
                     </tr>
                     <tr>

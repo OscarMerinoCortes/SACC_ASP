@@ -8,10 +8,10 @@
 			<table style="width: 100%;">
 				<tr>
 					<td colspan="3">
-						<asp:ImageButton ID="BTNuevo" runat="server" Text="Nuevo" ImageUrl="~/Imagenes/IMNuevo.png" CssClass="button" />
-						<asp:ImageButton ID="BTNGuardar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMGuardar.png" Text="Guardar" ValidationGroup="BTNGuardar" OnClientClick="return confirm('Esta seguro que los datos son los correctos?');" />
-						<asp:ImageButton ID="BTNActualizar" runat="server" Text="Actualizar" ImageUrl="~/Imagenes/IMActualizar.png" CssClass="button" OnClientClick="return confirm('Se actualizaran las cantidades, estas seguro que son las correctas?');" />
-						<asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" />
+						<asp:ImageButton ID="BTNuevo" runat="server" Text="Nuevo" ImageUrl="~/Imagenes/IMNuevo.png" CssClass="button" Width="80px" />
+						<asp:ImageButton ID="BTNGuardar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMGuardar.png" Text="Guardar" ValidationGroup="BTNGuardar" OnClientClick="return confirm('Esta seguro que los datos son los correctos?');" Width="80px" />
+						<asp:ImageButton ID="BTNActualizar" runat="server" Text="Actualizar" ImageUrl="~/Imagenes/IMActualizar.png" CssClass="button" OnClientClick="return confirm('Se actualizaran las cantidades, estas seguro que son las correctas?');" Width="80px" />
+						<asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" Width="80px" />
 						</td>
 					</tr>
 					<tr>

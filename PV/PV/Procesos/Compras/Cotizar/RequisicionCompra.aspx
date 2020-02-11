@@ -8,10 +8,10 @@
                 <table style="width: 100%;">
                     <tr>
                         <td colspan="3">
-                            <asp:ImageButton ID="BTNuevo" runat="server" Text="Nuevo" ImageUrl="~/Imagenes/IMNuevo.png"  CssClass="button"/>
+                            <asp:ImageButton ID="BTNuevo" runat="server" Text="Nuevo" ImageUrl="~/Imagenes/IMNuevo.png"  CssClass="button" Width="80px"/>
                             
-							<asp:ImageButton ID="BTNConsultar" runat="server" Text="Consultar" ImageUrl="~/Imagenes/IMConsultar.png" CausesValidation="true" ValidationGroup="BTNGuardar" CssClass="button"/>
-							<asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" />
+							<asp:ImageButton ID="BTNConsultar" runat="server" Text="Consultar" ImageUrl="~/Imagenes/IMConsultar.png" CausesValidation="true" ValidationGroup="BTNGuardar" CssClass="button" Width="80px"/>
+							<asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" Width="80px" />
 						</td>
 					</tr>
 					<tr>
@@ -101,10 +101,10 @@
 						<td colspan="6" style="height: 30px"></td>
 					</tr>
 					<tr style="text-align: left;">
-						<td colspan="6" style="height: 30px">
-							<asp:ImageButton ID="BTNGuardar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMGuardar.png" Text="Guardar" ValidationGroup="BTNGuardar" />
-							<asp:ImageButton ID="BTNConsultarRequisiciones" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMConsultar.png" Text="Guardar" ValidationGroup="BTNGuardar" />
-						<asp:ImageButton ID="BTNRegresarx2" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMRegresar.png" Text="Regresar" ValidationGroup="BTNRegresar" />
+						<td colspan="6" style="height: 28px">
+							<asp:ImageButton ID="BTNGuardar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMGuardar.png" Text="Guardar" ValidationGroup="BTNGuardar" Width="80px" />
+							<asp:ImageButton ID="BTNConsultarRequisiciones" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMConsultar.png" Text="Guardar" ValidationGroup="BTNGuardar" Width="80px" />
+						<asp:ImageButton ID="BTNRegresarx2" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMRegresar.png" Text="Regresar" ValidationGroup="BTNRegresar" Width="80px" />
 						</td>
 					</tr>
 					<tr style="text-align: left;">
@@ -218,7 +218,7 @@
                         <td colspan="7" style="height: 44px"></td>
                     </tr>
 					<tr style="text-align: left;">
-                        <td colspan="7"><asp:ImageButton ID="BTNRegresar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMRegresar.png" Text="Regresar" ValidationGroup="BTNRegresar" /></td>
+                        <td colspan="7" style="height: 38px"><asp:ImageButton ID="BTNRegresar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMRegresar.png" Text="Regresar" ValidationGroup="BTNRegresar" Width="80px" Height="33px" /></td>
                     </tr>
 					<tr style="text-align: left;">
                         <td colspan="7"></td>

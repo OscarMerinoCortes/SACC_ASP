@@ -1,12 +1,15 @@
 ﻿Imports CrystalDecisions.Shared
 Imports CrystalDecisions.CrystalReports.Engine
 Imports System.Data.SqlClient
+Imports System.IO
+Imports System.Text
+Imports System.Security.Cryptography
 
 Public Class ReporteOrdenCompra
 	Inherits System.Web.UI.Page
-
 	Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 		If Not Page.IsPostBack Then
+			Dim ClaseSeguridad As New EncryptDecrypt
 			'PARAMETROS DE CONEXION
 			Dim oConexInfo As ConnectionInfo
 			oConexInfo = New ConnectionInfo()
@@ -15,10 +18,12 @@ Public Class ReporteOrdenCompra
 			oConexInfo.UserID = "sa"
 			oConexInfo.Password = "Usuario01"
 			'PARAMETROS UTILIZADOS PARA IDENTIFICAR LA ORDEN DE COMPRA
-			Dim IdOrden As Integer = Request.QueryString("IdordenCompra")
-			Dim Usuario As Integer = Request.QueryString("Usuario")
-			Dim URL As String = Request.QueryString("URL")
-			Dim Rapida As String = Request.QueryString("Rapida")
+			Dim IdOrden As Integer = ClaseSeguridad.Decrypt(HttpUtility.UrlDecode(Request.QueryString("IdordenCompra")))
+			IdOrden = Convert.ToInt32(IdOrden)
+			Dim Usuario As Integer = ClaseSeguridad.Decrypt(HttpUtility.UrlDecode(Request.QueryString("Usuario")))
+			Usuario = Convert.ToInt32(Usuario)
+			Dim URL As String = ClaseSeguridad.Decrypt(HttpUtility.UrlDecode(Request.QueryString("URL")))
+			Dim Rapida As String = ClaseSeguridad.Decrypt(HttpUtility.UrlDecode(Request.QueryString("Rapida")))
 			'CONDICION PARA IMPRIMIR REPORTE NACIONAL O RAPIDA
 			If Rapida = "S" Then
 				'IMPRIMIR REPORTE PRIMARIO

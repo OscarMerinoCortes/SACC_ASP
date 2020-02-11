@@ -5,6 +5,8 @@ Imports System.Text.RegularExpressions
 Imports System.Web.UI.WebControls
 Imports System.Web.UI
 Imports System.Web.Security
+Imports System.Security.Cryptography
+Imports System.IO
 
 Public Class ImprimirOrdenCompra
 	Inherits System.Web.UI.Page
@@ -16,6 +18,7 @@ Public Class ImprimirOrdenCompra
 	Public IdCotizacion As Integer = 0
 	Public IdRequisicion As Integer = 0
 	Public Dolar As Double = 0
+	Dim ClaseSeguridad As New EncryptDecrypt
 	Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 		If Not Page.IsPostBack Then
 			'Nuevo()
@@ -61,9 +64,9 @@ Public Class ImprimirOrdenCompra
 						Else
 							Rapida = "N"
 						End If
-						Dim IdordenCompra As Integer = TBFolio.Text
-						Dim Usuario As Integer = Session("Usuario") 'CAMBIAR A LOS USUARIOS DEPENDIENDO  DEL ROL
-						Dim URL As String = Request.RawUrl
+						Dim IdordenCompra As Integer = HttpUtility.UrlEncode(ClaseSeguridad.Encrypt(TBFolio.Text).ToString)
+						Dim Usuario As Integer = HttpUtility.UrlEncode(ClaseSeguridad.Encrypt(Session("Usuario").ToString))
+						Dim URL As String = HttpUtility.UrlEncode(ClaseSeguridad.Encrypt(Request.RawUrl).ToString)
 						Response.Redirect("~/Procesos/RPT/ReporteOrdenCompra.aspx?IdordenCompra=" & IdordenCompra & "&Usuario=" & Usuario & "&URL=" & URL & "&Rapida=" & Rapida)
 						sqlQuery = "UPDATE ORDEN_COMPRA SET TOTAL = " & TBSubtotal.Text & ", ENVIARA = '" & TBEnviar.Text & "', DISCOUNT = " & TBDescuento.Text & ", FREIGHT = " & TBFlete.Text & ", TAX = " & TBImpuestos.Text & ", OTROS_CARGOS = " & TBOtrosCargos.Text & ", COMENTARIO = '" & TBComentarios.Text & "', CONFIRMADA = 'X' WHERE ID_ORDEN_COMPRA = " & TBFolio.Text
 						Dim Cmd As New SqlCommand(sqlQuery, cnn)
@@ -106,9 +109,10 @@ Public Class ImprimirOrdenCompra
 				Else
 					Rapida = "N"
 				End If
-				Dim IdordenCompra As Integer = Session("ID_ORDEN_COMPRA")
-				Dim Usuario As Integer = Session("UsuarioReimprimir") 'CAMBIAR A LOS USUARIOS DEPENDIENDO  DEL ROL
-				Dim URL As String = Request.RawUrl
+				Dim IdordenCompra As String = HttpUtility.UrlEncode(ClaseSeguridad.Encrypt(Session("ID_ORDEN_COMPRA").ToString))
+				Dim Usuario As String = HttpUtility.UrlEncode(ClaseSeguridad.Encrypt(Session("UsuarioReimprimir").ToString))
+				Dim URL As String = HttpUtility.UrlEncode(ClaseSeguridad.Encrypt(Request.RawUrl))
+				Rapida = HttpUtility.UrlEncode(ClaseSeguridad.Encrypt(Rapida))
 				Response.Redirect("~/Procesos/RPT/ReporteOrdenCompra.aspx?IdordenCompra=" & IdordenCompra & "&Usuario=" & Usuario & "&URL=" & URL & "&Rapida=" & Rapida)
 			End If
 		End If

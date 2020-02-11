@@ -5,12 +5,12 @@
         <asp:MultiView ID="MultiView1" runat="server">
             <asp:View ID="VRegistro" runat="server">
 				<br />
-                <table style="width: 100%;">
+                <table class="w-100">
                     <tr>
                         <td colspan="3">
-                            <asp:ImageButton ID="BTNuevo" runat="server" Text="Nuevo" ImageUrl="~/Imagenes/IMNuevo.png"  CssClass="button"/>
-                            <asp:ImageButton ID="BTNAutorizar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMAutorizar.png" Text="Autorizar" ValidationGroup="BTNAutorizar" />
-							<asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" />
+                            <asp:ImageButton ID="BTNuevo" runat="server" Text="Nuevo" ImageUrl="~/Imagenes/IMNuevo.png"  CssClass="button" Width="80px"/>
+                            <asp:ImageButton ID="BTNAutorizar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMAutorizar.png" Text="Autorizar" ValidationGroup="BTNAutorizar" Width="80px" />
+							<asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" Width="80px" />
 						</td>
 					</tr>
 					<tr>

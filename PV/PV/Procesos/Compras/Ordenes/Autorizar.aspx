@@ -7,10 +7,10 @@
 				<table style="width: 100%;">
 					<tr>
 						<td colspan="3">
-							<asp:ImageButton ID="BTNAutorizar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMAutorizar.png" Text="Autorizar" ValidationGroup="BTNAutorizar" OnClientClick="return confirm('Estas seguro que los datos son correctos?')"/>
-							<asp:ImageButton ID="BTNRechazar" runat="server" ImageUrl="~/Imagenes/IMCancelar.png" CssClass="button" OnClientClick="return confirm('Estas seguro de que deseas rechazar estar orden de compra?')" />
-							<asp:ImageButton ID="BTNAdministracion" runat="server" ImageUrl="~/Imagenes/IMAdministracion.png" />
-							<asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" />
+							<asp:ImageButton ID="BTNAutorizar" runat="server" CausesValidation="true" CssClass="button" ImageUrl="~/Imagenes/IMAutorizar.png" Text="Autorizar" ValidationGroup="BTNAutorizar" OnClientClick="return confirm('Estas seguro que los datos son correctos?')" Width="80px"/>
+							<asp:ImageButton ID="BTNRechazar" runat="server" ImageUrl="~/Imagenes/IMCancelar.png" CssClass="button" OnClientClick="return confirm('Estas seguro de que deseas rechazar estar orden de compra?')" Width="80px" />
+							<asp:ImageButton ID="BTNAdministracion" runat="server" ImageUrl="~/Imagenes/IMAdministracion.png" Width="80px" />
+							<asp:ImageButton ID="BTNSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" Width="80px" />
 						</td>
 					</tr>
 					<tr>
@@ -242,9 +242,9 @@
 				<table style="width: 100%;">
 					<tr>
 						<td colspan="3">
-							<asp:ImageButton ID="IMBRegresar" runat="server" Text="Regresar" ImageUrl="~/Imagenes/IMRegresar.png" CssClass="button" />
-							<asp:ImageButton ID="IMAplicar" runat="server" ImageUrl="~/Imagenes/IMAplicar.png" OnClientClick="return confirm('Estas seguro de realizar esta accion')" />
-							<asp:ImageButton ID="IMSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" />
+							<asp:ImageButton ID="IMBRegresar" runat="server" Text="Regresar" ImageUrl="~/Imagenes/IMRegresar.png" CssClass="button" Width="80px" />
+							<asp:ImageButton ID="IMAplicar" runat="server" ImageUrl="~/Imagenes/IMAutorizar.png" OnClientClick="return confirm('Estas seguro de realizar esta accion')" Width="80px" />
+							<asp:ImageButton ID="IMSalir" runat="server" Text="Salir" ImageUrl="~/Imagenes/IMSalir.png" CssClass="button" Width="80px" />
 						</td>
 					</tr>
 					<tr>
